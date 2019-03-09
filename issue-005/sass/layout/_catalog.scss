@@ -1,0 +1,63 @@
+.catalog {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  width: $catalog-width;
+  background-color: $white;
+  &:hover {
+    width: 50vw;
+    .catalog__card {
+      display: inherit;
+    }
+    .catalog__info {
+      display: none;
+    }
+  }
+  transition: width 0.05s linear;
+}
+
+.catalog__info {
+  position: absolute;
+  bottom: 3rem;
+  writing-mode: tb-rl;
+  font-size: 2em;
+}
+
+.catalog__logoContainer {
+  max-width: 132px;
+  width: 132px;
+  margin-bottom: 4.375rem;
+}
+
+.catalog__logo {
+  width: 100%;
+}
+
+.catalog__card {
+  display: none;
+  padding: 6.75rem $catalog-width 16.3rem 6.25rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.catalog__item {
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid red;
+  &:nth-child(2) {
+    padding-top: 0;
+  }
+}
+
+.catalog__title {
+  max-width: 387px;
+  margin: 0;
+}
+
+.catalog__author {
+  max-width: 387px;
+}

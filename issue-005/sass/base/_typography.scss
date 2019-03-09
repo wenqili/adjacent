@@ -1,0 +1,51 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  // font: normal 125% / 1.4 $text-font-stack;
+  color: $primary-color;
+  font-family: $secondary-font-family;
+  font-size: 62.5%;
+}
+
+p {
+  color: $secondarty-color;
+  font-size: 2em;
+}
+
+footer {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: $heading-3-size;
+  font-family: $primary-font-family;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 1.4em;
+}
+
+h4 {
+  font-size: $heading-3-size;
+  font-family: $secondary-font-family;
+  margin-top: 0;
+  line-height: 1.4em;
+  font-weight: normal;
+}
+
+.c-article__title {
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.c-article__author {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.c-dropdown {
+  font-size: 2em;
+  font-family: $primary-font-family;
+}

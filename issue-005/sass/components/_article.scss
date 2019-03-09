@@ -1,0 +1,31 @@
+.c-article {
+  position: relative;
+  padding: 2rem 4rem;
+  width: 50%;
+  filter: blur(5px);
+  &:hover {
+    filter: none;
+    transform: scale(1.05);
+    .c-article__card {
+      opacity: 1;
+      // background-color: red;
+    }
+  }
+
+  transition: 0.2s filter linear,
+    transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.c-article__card {
+  position: absolute;
+  padding-right: 20rem;
+  bottom: 3rem;
+  opacity: 0;
+  transition: opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s,
+    -webkit-transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.c-article__thumbnail {
+  width: 100%;
+  height: auto;
+}

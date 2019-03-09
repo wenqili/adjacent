@@ -1,0 +1,49 @@
+.c-metaBar {
+  display: flex;
+}
+.c-metaBar__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-metaBar__logoContainer {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $primary-color;
+}
+
+.c-metaBar__brandLogo {
+  display: flex;
+}
+
+.c-metaBar__issueLogo--small {
+  width: 150px !important;
+}
+
+.c-metaBar__issueLogo {
+  position: absolute;
+  top: 100px;
+  margin-top: 1.65rem;
+  z-index: 10;
+  width: $wrapper-width;
+  pointer-events: none;
+}
+
+.c-metaBar__issueLogoImage {
+  // width: $wrapper-width;
+  width: 100%;
+}
+
+.loader {
+  animation: zoomIn 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    width: $wrapper-width;
+  }
+  100% {
+    width: 150px;
+  }
+}

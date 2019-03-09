@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: '80-kb-Grunge';
+  src: url('./fonts/80-kb-Grunge.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '80-kb-Soft';
+  src: url('./fonts/80-kb-Soft.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '80-kb-Regular';
+  src: url('./fonts/80-kb-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuezOne-Regular';
+  src: url('./fonts/SuezOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '80-kb-Sharp';
+  src: url('./fonts/80-kb-Sharp.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

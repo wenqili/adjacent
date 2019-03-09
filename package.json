@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel issue-005/front_page_template.html --open"
+    "start": "parcel issue-005/front_page_template.html --open",
+    "dev": "sass --watch issue-005/sass/.:/Users/ericli/Documents/wordpress/wordpress/wp-content/themes/adjacent-theme"
   },
   "devDependencies": {
     "parcel-bundler": "^1.11.0",
