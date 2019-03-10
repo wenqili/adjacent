@@ -3,44 +3,46 @@
   width: 50%;
   padding: 2rem 4rem;
   filter: blur(5px);
+  transition: 0.2s filter linear,
+    transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
   &:hover {
     filter: none;
     transform: scale(1.05);
-    .c-ArticleCard__card {
-      opacity: 1;
-      // background-color: red;
-    }
+    z-index: 10;
   }
 
-  transition: 0.2s filter linear,
-    transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  &:hover & {
+    &__card {
+      opacity: 1;
+    }
+  }
 }
 
 .c-ArticleCard__card {
   position: absolute;
-  bottom: 3rem;
-  padding-right: 20rem;
+  top: 50%;
+  padding-right: 40%;
   opacity: 0;
   transition: opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s,
     -webkit-transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
 .c-ArticleCard__title {
+  margin-top: 0;
   margin-bottom: 0;
-  text-decoration: none;
-  
   font-family: $primary-font-family;
   font-size: $heading-3-size;
+  text-decoration: none;
   color: $primary-color;
 }
 
 .c-ArticleCard__author {
   margin-top: 0;
   margin-bottom: 0;
-  text-decoration: none;
   font-family: $secondary-font-family;
   font-size: $heading-4-size;
+  text-decoration: none;
   color: $primary-color;
 }
 

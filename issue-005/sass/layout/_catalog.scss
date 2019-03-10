@@ -12,7 +12,7 @@
     width: 50vw;
 
     #{ $self }__card {
-      display: inherit;
+      display: block;
     }
 
     #{ $self }__info {
@@ -24,7 +24,7 @@
     background-color: $secondary-color;
     color: $white;
     a {
-      color: inherit;
+      color: $white;
     }
   }
 }
@@ -77,8 +77,11 @@
 .catalog__title {
   max-width: 387px;
   margin: 0;
+  color: inherit;
 }
 
 .catalog__author {
   max-width: 387px;
+  font-family: $secondary-font-family;
+  color: inherit;
 }

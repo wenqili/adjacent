@@ -1,5 +1,52 @@
-.c-navBar {
+.c-NavBar {
+  display: flex;
+}
+
+.c-NavBar__logoContainer {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $primary-color;
+}
+
+.c-NavBar__brandLogo {
+  display: flex;
+}
+
+.c-NavBar__issueLogo {
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+  width: $wrapper-width;
+  pointer-events: none;
+
+  &--small {
+    width: 150px;
+  }
+}
+
+.c-NavBar__issueLogoImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.c-NavBar__dropDown {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+}
+
+
+/// For On Load animation
+.loader {
+  animation: zoomIn 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    width: $wrapper-width;
+  }
+  100% {
+    width: 150px;
+  }
 }

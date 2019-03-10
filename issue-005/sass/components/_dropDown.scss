@@ -1,24 +1,26 @@
-.c-dropdown {
-  min-width: 150px;
-  padding: 0.5rem 1rem;
+.c-DropDown {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-right: 0rem;
+  padding-left: 2rem;
+
   font-family: $primary-font-family;
   font-size: 2em;
-  &:hover {
-    .c-dropdown__list {
-      opacity: 1;
+
+  &:hover & {
+    &__list {
+      visibility: visible;
     }
   }
 }
 
-.c-dropdown__list {
-  width: 100%;
-  opacity: 0;
+.c-DropDown__list {
+  visibility: hidden;
 }
 
-.c-dropdown__item {
+.c-DropDown__item {
   margin: 0.5rem 0rem;
   display: block;
-  width: 100%;
   font-family: $secondary-font-family;
 
   &:hover {

@@ -72,10 +72,10 @@ $wp_query->query('posts_per_page=20' . '&paged=' . $paged);
 
 while ($wp_query->have_posts()): $wp_query->the_post();?>
 
-									<div class="catalog__item catalog__item--reverse"><h3 class="catalog__title">
-										<a href="<?php the_permalink();?>" title="Read more"><?php the_title();?></a>
-												</h3><?php if (get_field('author')): ?>
-												<h4 class="c-article__author">By <?php the_field('author');?></h4>
+		<div class="catalog__item catalog__item--reverse"><h3 class="catalog__title">
+		<a href="<?php the_permalink();?>" title="Read more"><?php the_title();?></a>
+		</h3><?php if (get_field('author')): ?>
+		<h4 class="catalog__author">By <?php the_field('author');?></h4>
 												<?php endif;?>
 </div>
 

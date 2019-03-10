@@ -15,6 +15,10 @@ $white: hsl(0, 0%, 100%);
 /// Sidebar(catalog)
 $catalog-width: 4.25rem;
 
+/// Layout
+$header-padding-x: 3.5rem;
+$header-padding-y: 1.75rem;
+
 /// Main section(wrapper)
 $wrapper-width: calc(100% - 6rem - #{$catalog-width});
 
