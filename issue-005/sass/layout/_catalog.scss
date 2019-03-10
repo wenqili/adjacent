@@ -1,28 +1,44 @@
 .catalog {
+  $self: &;
   position: fixed;
-  z-index: 11;
   top: 0;
-  height: 100vh;
-  width: 50vw;
+  z-index: 11;
   width: $catalog-width;
+  height: 100vh;
   background-color: $white;
+  transition: width 0.05s linear;
+
   &:hover {
     width: 50vw;
-    .catalog__card {
+
+    #{ $self }__card {
       display: inherit;
     }
-    .catalog__info {
+
+    #{ $self }__info {
       display: none;
     }
   }
-  transition: width 0.05s linear;
+
+  &--reverse {
+    background-color: $secondary-color;
+    color: $white;
+    a {
+      color: inherit;
+    }
+  }
 }
 
 .catalog__info {
   position: absolute;
   bottom: 3rem;
+  transform: rotate(-180deg);
   writing-mode: tb-rl;
   font-size: 2em;
+  color: $primary-color;
+  &--reverse {
+    color: $white;
+  }
 }
 
 .catalog__logoContainer {
@@ -37,19 +53,24 @@
 
 .catalog__card {
   display: none;
-  padding: 6.75rem $catalog-width 16.3rem 6.25rem;
   position: absolute;
   height: 100%;
   width: 100%;
+  padding: 6.75rem $catalog-width 16.3rem 6.25rem;
   overflow-y: auto;
 }
 
 .catalog__item {
   padding-top: 3.5rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid $primary-color;
+
   &:nth-child(2) {
     padding-top: 0;
+  }
+
+  &--reverse {
+    border-bottom: 1px solid $white;
   }
 }
 

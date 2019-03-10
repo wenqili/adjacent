@@ -1,12 +1,13 @@
-.c-article {
+.c-ArticleCard {
   position: relative;
-  padding: 2rem 4rem;
   width: 50%;
+  padding: 2rem 4rem;
   filter: blur(5px);
+
   &:hover {
     filter: none;
     transform: scale(1.05);
-    .c-article__card {
+    .c-ArticleCard__card {
       opacity: 1;
       // background-color: red;
     }
@@ -16,16 +17,34 @@
     transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
-.c-article__card {
+.c-ArticleCard__card {
   position: absolute;
-  padding-right: 20rem;
   bottom: 3rem;
+  padding-right: 20rem;
   opacity: 0;
   transition: opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s,
     -webkit-transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
-.c-article__thumbnail {
+.c-ArticleCard__title {
+  margin-bottom: 0;
+  text-decoration: none;
+  
+  font-family: $primary-font-family;
+  font-size: $heading-3-size;
+  color: $primary-color;
+}
+
+.c-ArticleCard__author {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family: $secondary-font-family;
+  font-size: $heading-4-size;
+  color: $primary-color;
+}
+
+.c-ArticleCard__thumbnail {
   width: 100%;
   height: auto;
 }

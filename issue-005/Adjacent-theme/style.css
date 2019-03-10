@@ -1,3 +1,11 @@
+.white {
+  fill: white;
+}
+
+.with-fixed-catalog {
+  margin-left: 4.25rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -362,8 +370,16 @@ a {
   text-decoration: none;
 }
 
-body {
+.page-template-front-page {
   background-color: black;
+}
+
+.post-template-default {
+  background-color: white;
+}
+
+.screen-reader-text {
+  display: none;
 }
 
 @font-face {
@@ -400,50 +416,72 @@ body {
  * Basic typography style for copy text
  */
 body {
+  font: normal 62.5% "80-kb-Regular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SuezOne-Regular", sans-serif;
   color: red;
-  font-family: "80-kb-Regular", sans-serif;
-  font-size: 62.5%;
 }
 
-p {
-  color: secondarty-color;
-  font-size: 2em;
+h1 {
+  font-size: 3.2em;
 }
 
-footer {
-  font-size: 2em;
+h2 {
+  font-size: 2.4em;
 }
 
 h3 {
   font-size: 2.4em;
-  font-family: "SuezOne-Regular", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 0;
   line-height: 1.4em;
+  text-transform: uppercase;
 }
 
 h4 {
   font-size: 2.4em;
-  font-family: "80-kb-Regular", sans-serif;
-  margin-top: 0;
   line-height: 1.4em;
   font-weight: normal;
 }
 
-.c-article__title {
-  margin-bottom: 0;
-  text-decoration: none;
+h5 {
+  font-size: 1.8em;
 }
 
-.c-article__author {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-decoration: none;
+h6 {
+  font-size: 1.8em;
 }
 
-.c-dropdown {
-  font-size: 2em;
+p {
+  font-size: 1.8em;
+  color: black;
+  line-height: 1.5em;
+}
+
+figcaption {
+  text-align: left !important;
+}
+
+blockquote p {
+  color: red;
   font-family: "SuezOne-Regular", sans-serif;
+}
+
+.wp-block-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.wp-block-pullquote {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  margin: 3.6rem 0;
 }
 
 .c-metaBar {
@@ -471,7 +509,6 @@ h4 {
 .c-metaBar__issueLogo {
   position: absolute;
   top: 100px;
-  margin-top: 1.65rem;
   z-index: 10;
   width: calc(100% - 6rem - 4.25rem);
   pointer-events: none;
@@ -504,6 +541,8 @@ h4 {
 .c-dropdown {
   min-width: 150px;
   padding: 0.5rem 1rem;
+  font-family: "SuezOne-Regular", sans-serif;
+  font-size: 2em;
 }
 .c-dropdown:hover .c-dropdown__list {
   opacity: 1;
@@ -524,52 +563,57 @@ h4 {
   text-decoration: line-through;
 }
 
-.c-article {
+.c-ArticleCard {
   position: relative;
-  padding: 2rem 4rem;
   width: 50%;
+  padding: 2rem 4rem;
   filter: blur(5px);
   transition: 0.2s filter linear, transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
-.c-article:hover {
+.c-ArticleCard:hover {
   filter: none;
   transform: scale(1.05);
 }
-.c-article:hover .c-article__card {
+.c-ArticleCard:hover .c-ArticleCard__card {
   opacity: 1;
 }
 
-.c-article__card {
+.c-ArticleCard__card {
   position: absolute;
-  padding-right: 20rem;
   bottom: 3rem;
+  padding-right: 20rem;
   opacity: 0;
   transition: opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, -webkit-transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
-.c-article__thumbnail {
+.c-ArticleCard__title {
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family: "SuezOne-Regular", sans-serif;
+  font-size: 2.4em;
+  color: red;
+}
+
+.c-ArticleCard__author {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family: "80-kb-Regular", sans-serif;
+  font-size: 2.4em;
+  color: red;
+}
+
+.c-ArticleCard__thumbnail {
   width: 100%;
   height: auto;
 }
 
-.footer {
-  width: calc(100% - 6rem - 4.25rem);
-  margin-left: 4.25rem;
-  padding: 1.75rem 3.5rem;
-}
-
-.wrapper {
-  width: calc(100% - 6rem - 4.25rem);
-  margin-left: 4.25rem;
-}
-
 .catalog {
   position: fixed;
-  z-index: 11;
   top: 0;
-  height: 100vh;
-  width: 50vw;
+  z-index: 11;
   width: 4.25rem;
+  height: 100vh;
   background-color: white;
   transition: width 0.05s linear;
 }
@@ -582,12 +626,24 @@ h4 {
 .catalog:hover .catalog__info {
   display: none;
 }
+.catalog--reverse {
+  background-color: black;
+  color: white;
+}
+.catalog--reverse a {
+  color: inherit;
+}
 
 .catalog__info {
   position: absolute;
   bottom: 3rem;
+  transform: rotate(-180deg);
   writing-mode: tb-rl;
   font-size: 2em;
+  color: red;
+}
+.catalog__info--reverse {
+  color: white;
 }
 
 .catalog__logoContainer {
@@ -602,10 +658,10 @@ h4 {
 
 .catalog__card {
   display: none;
-  padding: 6.75rem 4.25rem 16.3rem 6.25rem;
   position: absolute;
   height: 100%;
   width: 100%;
+  padding: 6.75rem 4.25rem 16.3rem 6.25rem;
   overflow-y: auto;
 }
 
@@ -616,6 +672,9 @@ h4 {
 }
 .catalog__item:nth-child(2) {
   padding-top: 0;
+}
+.catalog__item--reverse {
+  border-bottom: 1px solid white;
 }
 
 .catalog__title {
@@ -632,22 +691,33 @@ h4 {
   right: 0;
   z-index: 10;
   padding: 1.75rem 3.5rem;
-  margin-left: 4.25rem;
 }
 
 .container {
-  padding: 1.75rem 3.5rem;
-  width: calc(100% - 6rem - 4.25rem);
-  margin-left: 4.25rem;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  width: calc(100% - 6rem - 4.25rem);
+  padding: 1.75rem 3.5rem;
 }
 
 .content {
-  padding: 1.75rem 3.5rem;
   width: calc(100% - 6rem - 4.25rem);
-  margin-left: 4.25rem;
+  padding: 1.75rem 3.5rem;
+}
+
+.footer {
+  width: calc(100% - 6rem - 4.25rem);
+  padding: 1.75rem 3.5rem;
+}
+
+.footer__info p {
+  font-size: 2em;
+  color: red;
+}
+
+.footer__siteMapList {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

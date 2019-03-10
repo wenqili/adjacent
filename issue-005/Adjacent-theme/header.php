@@ -26,7 +26,7 @@
 
 
 
-<header role="banner" class=<?php if (is_front_page()) {echo "'header-front-page header'";} else {echo "'header-normal header'";}?> >
+<header role="banner" class=<?php if (is_front_page()) {echo "'header-front-page header with-fixed-catalog'";} else {echo "'header-normal header with-fixed-catalog'";}?> >
   <div class="c-metaBar">
     <div class="c-metaBar__brand">
       <div class="c-metaBar__logoContainer">

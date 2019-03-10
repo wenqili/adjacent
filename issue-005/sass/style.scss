@@ -1,17 +1,16 @@
 @charset 'UTF-8';
+@import 'themes/issue005';
 
-@import 'abstract/variables';
+@import 'abstract/variables', 'abstract/helpers', 'abstract/mixins';
 
 @import 'vendors/normalize';
 
 @import 'base/base', 'base/font', 'base/typography';
 
 @import 'components/metaBar', 'components/navBar', 'components/dropDown',
-  'components/article', 'components/footer';
-
-// @import 'themes/';
+  'components/ArticleCard';
 
 // @import 'pages/';
 
-@import 'layout/wrapper', 'layout/catalog', 'layout/header', 'layout/container',
-  'layout/content';
+@import 'layout/catalog', 'layout/header', 'layout/container', 'layout/content',
+  'layout/footer';

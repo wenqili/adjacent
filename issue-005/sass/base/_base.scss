@@ -27,6 +27,14 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: $secondarty-color;
+.page-template-front-page {
+  background-color: $secondary-color;
+}
+
+.post-template-default {
+  background-color: $white;
+}
+
+.screen-reader-text {
+  display: none;
 }

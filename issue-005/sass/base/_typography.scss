@@ -1,51 +1,84 @@
 /**
  * Basic typography style for copy text
  */
+$heading-font: $primary-font-family;
+$heading-1-size: $theme-heading-1-size !default;
+$heading-2-size: $theme-heading-2-size !default;
+$heading-3-size: $theme-heading-3-size !default;
+$heading-4-size: $theme-heading-4-size !default;
+$heading-5-size: $theme-heading-5-size !default;
+$heading-6-size: $theme-heading-6-size !default;
+$paragraph-size: $theme-paragraph-size !default;
 
 body {
-  // font: normal 125% / 1.4 $text-font-stack;
+  font: normal 62.5% $secondary-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font-family;
   color: $primary-color;
-  font-family: $secondary-font-family;
-  font-size: 62.5%;
 }
 
-p {
-  color: $secondarty-color;
-  font-size: 2em;
+h1 {
+  font-size: $heading-1-size;
 }
 
-footer {
-  font-size: 2em;
+h2 {
+  font-size: $heading-2-size;
 }
 
 h3 {
   font-size: $heading-3-size;
-  font-family: $primary-font-family;
-  text-transform: uppercase;
-  margin-bottom: 0;
   line-height: 1.4em;
+  text-transform: uppercase;
 }
 
 h4 {
-  font-size: $heading-3-size;
-  font-family: $secondary-font-family;
-  margin-top: 0;
+  font-size: $heading-4-size;
   line-height: 1.4em;
   font-weight: normal;
 }
 
-.c-article__title {
-  margin-bottom: 0;
-  text-decoration: none;
+h5 {
+  font-size: $heading-5-size;
 }
 
-.c-article__author {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-decoration: none;
+h6 {
+  font-size: $heading-6-size;
 }
 
-.c-dropdown {
-  font-size: 2em;
-  font-family: $primary-font-family;
+p {
+  font-size: $paragraph-size;
+  color: $secondary-color;
+  line-height: 1.5em;
+}
+
+figcaption {
+  text-align: left !important;
+}
+
+blockquote {
+  p {
+    color: $primary-color;
+    font-family: $primary-font-family;
+  }
+}
+
+.wp-block-image {
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.wp-block-pullquote {
+  border-top: 1px solid $primary-color;
+  border-bottom: 1px solid $primary-color;
+  margin: 3.6rem 0;
 }

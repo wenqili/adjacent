@@ -1,13 +1,17 @@
 .footer {
   width: $wrapper-width;
-  margin-left: $catalog-width;
   padding: 1.75rem 3.5rem;
 }
 
 .footer__info {
+  p {
+    font-size: 2em;
+    color: $primary-color;
+  }
 }
 
 .footer__siteMapList {
+  font-size: 2em;
 }
 
 .footer__link {

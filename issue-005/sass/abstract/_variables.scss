@@ -1,29 +1,15 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
+// This file contains all application-wide Sass initial variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
-$primary-font-family: 'SuezOne-Regular', sans-serif !default;
-$secondary-font-family: '80-kb-Regular', sans-serif !default;
-$code-font-family: 'Courier New', monospace !default;
-
-$heading-1-font: $primary-font-family;
-$heading-2-font: $primary-font-family;
-$heading-3-font: $primary-font-family;
-$heading-4-font: $secondary-font-family;
-$heading-5-font: $secondary-font-family;
-$heading-5-font: $secondary-font-family;
-
-$heading-1-size: 3em;
-$heading-2-size: 3em;
-$heading-3-size: 2.4em;
-$heading-4-size: 2.4em;
-$heading-5-size: 1em;
-$heading-6-size: 1em;
+/// Font family
+$primary-font-family: $theme-primary-font;
+$secondary-font-family: $theme-secondary-font;
+$code-font-family: $theme-code-font;
 
 /// Color
-$primary-color: hsl(0, 100%, 50%) !default;
-$secondarty-color: hsl(0, 0, 0);
+$primary-color: $theme-primary-color !default;
+$secondary-color: $theme-secondary-color !default;
 $white: hsl(0, 0%, 100%);
 
 /// Sidebar(catalog)
@@ -33,3 +19,9 @@ $catalog-width: 4.25rem;
 $wrapper-width: calc(100% - 6rem - #{$catalog-width});
 
 $article-padding: 5rem;
+
+/// Responsiveness
+$gap: 64px;
+
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;

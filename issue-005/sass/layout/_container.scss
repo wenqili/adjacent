@@ -1,8 +1,7 @@
 .container {
-  padding: 1.75rem 3.5rem;
-  width: $wrapper-width;
-  margin-left: $catalog-width;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  width: $wrapper-width;
+  padding: 1.75rem 3.5rem;
 }

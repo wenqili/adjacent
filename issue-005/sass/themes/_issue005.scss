@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains theme Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Fonts:
+/// Article Title, all headings, blockquote, navbar
+$theme-primary-font: 'SuezOne-Regular', sans-serif !default;
+
+/// Article Author, text, figcaption, navbar-nested-items, footer
+$theme-secondary-font: '80-kb-Regular', sans-serif !default;
+
+/// code 
+$theme-code-font: 'Courier New', monospace !default;
+
+/// Text size:
+$theme-heading-1-size: 3.2em;
+$theme-heading-2-size: 2.4em;
+$theme-heading-3-size: 2.4em;
+$theme-heading-4-size: 2.4em;
+$theme-heading-5-size: 1.8em;
+$theme-heading-6-size: 1.8em;
+$theme-paragraph-size: 1.8em;
+
+
+/// Color:
+/// Article Title, Author, Headings, navbar, blockquote
+$theme-primary-color: hsl(0, 100%, 50%) !default;
+
+/// content text
+$theme-secondary-color: hsl(0, 0, 0) !default;
+
+/// link
+$theme-link-color: hsl(0, 0, 0) !default;
+
