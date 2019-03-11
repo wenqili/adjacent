@@ -7,4 +7,12 @@
 
 .wrapper {
   padding: $page-padding-y $page-padding-x;
+  min-width: 1000px;
+
+  @include fullhd() {
+    margin: auto;
+    max-width: 1440px;
+    padding-left: calc(#{$catalog-width} + 15rem) !important;
+    padding-right: calc(#{$catalog-width} + 15rem) !important;
+  }
 }
