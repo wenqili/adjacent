@@ -1,7 +1,42 @@
-.white {
-  fill: $white;
-}
+// -----------------------------------------------------------------------------
+// Helpers: special class names for small modifications
+// -----------------------------------------------------------------------------
+
+/// For Issue 5 site
 
 .with-fixed-catalog {
+  /// Create left margin for fixed catalog side bar(desktop)
   margin-left: $catalog-width;
+
+  /// On mobile, catalog bar was removed, add 30px gap on each side
+  @include mobile() {
+    margin-left: 0;
+    padding: 1.75rem 30px 3rem 30px !important;
+  }
+
+  /// On fullhd, add left padding to replace left margin, margin auto to center content
+  @include fullhd() {
+    margin: auto;
+    max-width: 1440px;
+    padding-left: calc(#{$catalog-width} + 3.5rem) !important;
+  }
+}
+
+/// For Gutenberg Editor
+.primary-font {
+  font-family: $primary-font-family;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.is-primary-button {
+  color: $primary-color;
+  a {
+    border-radius: 0px;
+    border: 1px solid !important;
+    width: 100%;
+    font-size: 1.8em;
+  }
 }

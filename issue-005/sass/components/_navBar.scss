@@ -7,8 +7,22 @@
   border-bottom: 2px solid $primary-color;
 }
 
+.c-NavBar__brand {
+  @include mobile() {
+    width: 90px;
+  }
+}
+
 .c-NavBar__brandLogo {
   display: flex;
+  max-width: 100%;
+  height: auto;
+
+  &--small {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .c-NavBar__issueLogo {
@@ -21,25 +35,48 @@
   &--small {
     width: 150px;
   }
+
+  @include mobile() {
+    width: 90px;
+    top: 70px;
+  }
 }
 
 .c-NavBar__issueLogoImage {
   max-width: 100%;
   height: auto;
+  @include mobile() {
+    // width: 90px;
+  }
 }
 
 .c-NavBar__dropDown {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+  @include mobile() {
+    display: none;
+  }
 }
 
+.c-NavBar__toggle {
+  flex-grow: 1;
+  justify-content: flex-end;
+  display: none;
+  @include mobile() {
+    display: flex;
+  }
+}
 
 /// For On Load animation
 .loader {
   animation: zoomIn 1s ease-out;
   animation-delay: 1s;
   animation-fill-mode: forwards;
+
+  @include mobile() {
+    animation: zoomInMobile 1s ease-out;
+  }
 }
 
 @keyframes zoomIn {
@@ -48,5 +85,14 @@
   }
   100% {
     width: 150px;
+  }
+}
+
+@keyframes zoomInMobile {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 90px;
   }
 }

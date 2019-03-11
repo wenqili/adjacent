@@ -23,22 +23,28 @@
   }
 }
 
-@mixin text($size: null, $family: null, $weight: null) {
-  @if $size != null {
-    font-size: $size;
-  }
+/// Responsiveness
 
-  @if $family != null {
-    font-family: $family;
-  }
-
-  @if $weight != null {
-    font-weight: $weight;
+@mixin mobile() {
+  @media screen and (max-width: $mobile) {
+    @content;
   }
 }
 
-/// Responsiveness
+@mixin tablet() {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @content;
+  }
+}
 
-// @mixin mobile(){
-//   @media screen and (max-width:)
-// }
+@mixin widescreen() {
+  @media screen and (min-width: $widescreen) {
+    @content;
+  }
+}
+
+@mixin fullhd() {
+  @media screen and (min-width: $fullhd) {
+    @content;
+  }
+}

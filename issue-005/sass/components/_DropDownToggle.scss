@@ -1,0 +1,35 @@
+.c-DropDownToggle {
+  font-family: $primary-font-family;
+  font-size: 2em;
+  padding: 1.2rem $menu-offset-x;
+  border-bottom: 1px solid $primary-color;
+}
+
+.c-DropDownToggle__list {
+  display: none;
+  transition: 0.2s ease;
+}
+
+.c-DropDownToggle__item {
+  display: block;
+  margin: 1rem 0.2rem;
+  font-family: $secondary-font-family;
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+#previous-issue {
+  display: none;
+
+  &:checked + #previous-issue-list {
+    display: block;
+  }
+}
+
+#menu {
+  display: none;
+  &:checked + #menu-list {
+    display: block;
+  }
+}

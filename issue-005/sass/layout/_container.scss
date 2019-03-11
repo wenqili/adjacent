@@ -2,5 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  padding: $header-padding-y $header-padding-x;
+  padding: $container-padding-y $container-padding-x;
+}
+
+.wrapper {
+  padding: $page-padding-y $page-padding-x;
 }

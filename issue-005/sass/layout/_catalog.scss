@@ -27,6 +27,10 @@
       color: $white;
     }
   }
+
+  @include mobile() {
+    display: none;
+  }
 }
 
 .catalog__info {
@@ -39,6 +43,17 @@
   &--reverse {
     color: $white;
   }
+
+  &--horizontal {
+    transform: none;
+    writing-mode: unset;
+    position: relative;
+    font-size: 2em;
+    bottom: unset;
+    margin-top: 2.78rem;
+    margin-bottom: 1.625rem;
+    margin-left: $menu-offset-x;
+  }
 }
 
 .catalog__logoContainer {
@@ -49,6 +64,11 @@
 
 .catalog__logo {
   width: 100%;
+
+  &--small {
+    width: 90px;
+    height: auto;
+  }
 }
 
 .catalog__card {
@@ -58,6 +78,14 @@
   width: 100%;
   padding: 6.75rem $catalog-width 16.3rem 6.25rem;
   overflow-y: auto;
+
+  &--show {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin-left: $menu-offset-x;
+    width: calc(100% - #{$menu-offset-x});
+  }
 }
 
 .catalog__item {
@@ -65,7 +93,7 @@
   padding-bottom: 3rem;
   border-bottom: 1px solid $primary-color;
 
-  &:nth-child(2) {
+  &:nth-child(1) {
     padding-top: 0;
   }
 

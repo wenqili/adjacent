@@ -1,0 +1,41 @@
+.c-ToggleMenu {
+  position: fixed;
+  z-index: 12;
+  background-color: transparent;
+  color: $primary-color;
+  border: none;
+}
+
+.c-ToggleMenu__toggle {
+  display: none;
+  &:checked + .c-ToggleMenu__overlay {
+    top: 0;
+  }
+}
+
+.c-ToggleMenu__overlay {
+  position: fixed;
+  z-index: 11;
+  top: -100vh;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: $white;
+  transition: 0.2s ease;
+}
+
+.c-ToggleMenu__logoContainer {
+  padding-top: 1.75rem;
+  padding-left: $menu-offset-x;
+  padding-bottom: 4.375rem;
+  padding-right: 60%;
+  border-bottom: 1px solid $primary-color;
+}
+
+.c-ToggleMenu__dropDown {
+  padding-top: 0;
+  padding-left: 0;
+  color: $primary-color;
+}

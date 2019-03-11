@@ -5,9 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel issue-005/front_page_template.html --open",
-    "dev": "sass --watch issue-005/sass/.:/Users/ericli/Documents/wordpress/wordpress/wp-content/themes/adjacent-theme"
+    "dev": "node-sass --watch issue-005/sass/. -o /Users/ericli/Documents/wordpress/wordpress/wp-content/themes/adjacent-theme"
   },
   "devDependencies": {
+    "node-sass": "^4.11.0",
     "parcel-bundler": "^1.11.0",
     "sass": "^1.17.2",
     "sassdoc": "^2.5.1"

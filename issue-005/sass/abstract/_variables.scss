@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass initial variables.
+// Variables: All site-wide Sass initial variables.
 // -----------------------------------------------------------------------------
 
 /// Font family
@@ -12,20 +12,28 @@ $primary-color: $theme-primary-color !default;
 $secondary-color: $theme-secondary-color !default;
 $white: hsl(0, 0%, 100%);
 
+/// Layout
 /// Sidebar(catalog)
 $catalog-width: 4.25rem;
-
-/// Layout
-$header-padding-x: 3.5rem;
-$header-padding-y: 1.75rem;
 
 /// Main section(wrapper)
 $wrapper-width: calc(100% - 6rem - #{$catalog-width});
 
-$article-padding: 5rem;
+/// Desktop
+$container-padding-x: 3.5rem;
+$container-padding-y: 1.75rem;
+
+/// For pages except posts and home page
+$page-padding-y: 6rem;
+$page-padding-x: 25%;
+
+/// Mobile
+$menu-offset-x: 2.75rem;
 
 /// Responsiveness
 $gap: 64px;
-
-$tablet: 769px !default;
+$mobile: 768px !default;
+$tablet: $mobile + 1 !default;
 $desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap) !default;
+$fullhd: 1344px + (2 * $gap) !default;
