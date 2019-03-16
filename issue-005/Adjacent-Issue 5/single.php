@@ -57,12 +57,12 @@ endwhile; // End of the loop.
 	</section><!-- #primary -->
 
 	<!-- catalog -->
-<div class="catalog catalog--reverse">
-	<p class="catalog__info catalog__info--reverse">Table of Content</p>
+<div class="catalog catalog--reverse" tabindex="0">
+	<p class="catalog__info catalog__info--reverse">Table of Contents</p>
 
 	<div class="catalog__card">
 		<div class="catalog__logoContainer">
-		<img class="catalog__logo white" alt="Reality Logo" src="http://localhost:8888/wordpress/wp-content/uploads/2019/03/reality.svg">
+		<img class="catalog__logo white" alt="Reality Logo" src="https://itp.nyu.edu/adjacent/issue-5/wp-content/uploads/sites/10/2019/03/reality.svg">
 	</div>
 		<?php
 $temp = $wp_query;

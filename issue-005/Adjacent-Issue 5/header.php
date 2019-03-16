@@ -26,15 +26,22 @@
 
 
 
-<header role="banner" class=<?php if (is_front_page()) {echo "'header-front-page header with-fixed-catalog'";} else {echo "'header-normal header with-fixed-catalog'";}?> >
+<header role="banner" class=
+<?php if (is_front_page()) {
+echo "'header-front-page header with-fixed-catalog'";
+} else {
+echo "'header-normal header with-fixed-catalog'";}?> >
   <div class="c-NavBar">
     <div class="c-NavBar__brand">
       <div class="c-NavBar__logoContainer">
-        <a href="<?php echo esc_url(home_url('/index.php')); ?>" title="<?php echo esc_html(get_bloginfo('name')); ?>" rel="home">
+
+		
+		<a href="<?php echo esc_url(home_url('/index.php')); ?>" title="<?php echo esc_html(get_bloginfo('name')); ?>" rel="home">
+
           <?php if (is_front_page()) {?>
-          <img class="c-NavBar__brandLogo" alt="Adjacent Logo" src="http://localhost:8888/wordpress/wp-content/uploads/2019/03/ADJECT_RED.png">
+          <img class="c-NavBar__brandLogo" alt="Adjacent Logo" src="https://itp.nyu.edu/adjacent/issue-5/wp-content/uploads/sites/10/2019/03/Adjacent_logo_red.png">
           <?php } else {?>
-          <img class="c-NavBar__brandLogo--small" alt="Adjacent Logo" src="http://localhost:8888/wordpress/wp-content/uploads/2019/03/ADJECT_RED.png">
+          <img class="c-NavBar__brandLogo--small" alt="Adjacent Logo" src="https://itp.nyu.edu/adjacent/issue-5/wp-content/uploads/sites/10/2019/03/Adjacent_logo_red.png">
     			<?php }?>
         </a>
 			</div> <!--End of logoContainer -->
@@ -47,7 +54,7 @@
 
 			<div class="<?php echo $description_class; ?>" >
       	<a href="https://itp.nyu.edu/adjacent/issue-4/index.php">
-        	<img class="c-NavBar__issueLogoImage" src="http://localhost:8888/wordpress/wp-content/uploads/2019/03/sub.png">
+        	<img class="c-NavBar__issueLogoImage" alt="Reality Issue Logo" src="https://itp.nyu.edu/adjacent/issue-5/wp-content/uploads/sites/10/2019/03/reality.svg">
       	</a>
 			</div> <!--End of issueLogo -->
 
@@ -60,7 +67,7 @@
 
 			<div class="c-ToggleMenu__overlay">
 				<div class="c-ToggleMenu__logoContainer">
-					<img class="catalog__logo catalog__logo--small" alt="Reality Logo" src="http://localhost:8888/wordpress/wp-content/uploads/2019/03/reality.svg">
+					<img class="catalog__logo catalog__logo--small" alt="Reality Logo" src="https://itp.nyu.edu/adjacent/issue-5/wp-content/uploads/sites/10/2019/03/reality.svg">
 				</div>
 				<div class="c-ToggleMenu__dropDown">
 					<div class="c-DropDownToggle">
@@ -70,7 +77,7 @@
 						</label>
 						<input type="checkbox" id="previous-issue" />
 
-						<div class="c-DropDownToggle__list" id="previous-issue-list" aria-labelledby="DropDownMenuLink">
+						<div class="c-DropDownToggle__list" id="previous-issue-list" role="button">
 							<a class="c-DropDownToggle__item" href="https://itp.nyu.edu/adjacent/issue-1/">issue 1</a>
 							<a class="c-DropDownToggle__item" href="https://itp.nyu.edu/adjacent/issue-2/">issue 2</a>
 							<a class="c-DropDownToggle__item" href="https://itp.nyu.edu/adjacent/issue-3/">issue 3</a>
@@ -80,13 +87,12 @@
 
 					<div class="c-DropDownToggle">
 						<label class="c-DropDownToggle__info"
-
 						for="menu" role="button" aria-haspopup="true" aria-expanded="false">
 							menu
 						</label>
 						<input type="checkbox" id="menu"/>
 
-						<div class="c-DropDownToggle__list" id="menu-list" aria-labelledby="DropDownMenuLink">
+						<div class="c-DropDownToggle__list" id="menu-list" role="button">
 							<a class="c-DropDownToggle__item" href="./submit/">submit</a>
 							<a class="c-DropDownToggle__item" href="./about/">about</a>
 						</div>
@@ -99,7 +105,7 @@
 
 				<!-- catalog -->
 <div class="c-ToggleMenu__catalog">
-	<p class="catalog__info catalog__info--horizontal">Table of Content</p>
+	<p class="catalog__info catalog__info--horizontal">Table of Contents</p>
 
 	<div class="catalog__card catalog__card--show">
 		<?php
@@ -131,11 +137,11 @@ while ($wp_query->have_posts()): $wp_query->the_post();?>
 
 		<div class="c-NavBar__dropDown">
 			<div class="c-DropDown">
-					<a class="c-DropDown__info" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					<a class="c-DropDown__info" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="previous-issues">
 							previous issues
 					</a>
 
-					<div class="c-DropDown__list" aria-labelledby="DropDownMenuLink">
+					<div class="c-DropDown__list" aria-labelledby="previous-issues">
 							<a class="c-DropDown__item" href="https://itp.nyu.edu/adjacent/issue-1/">issue 1</a>
 							<a class="c-DropDown__item" href="https://itp.nyu.edu/adjacent/issue-2/">issue 2</a>
 							<a class="c-DropDown__item" href="https://itp.nyu.edu/adjacent/issue-3/">issue 3</a>
@@ -144,11 +150,11 @@ while ($wp_query->have_posts()): $wp_query->the_post();?>
 			</div>
 
 			<div class="c-DropDown">
-					<a class="c-DropDown__info" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					<a class="c-DropDown__info" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="menu-dropdown">
 							menu
 					</a>
 
-					<div class="c-DropDown__list" aria-labelledby="DropDownMenuLink">
+					<div class="c-DropDown__list" aria-labelledby="menu-dropdown">
 							<a class="c-DropDown__item" href="./submit/">submit</a>
 							<a class="c-DropDown__item" href="./about/">about</a>
 					</div>

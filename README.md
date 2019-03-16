@@ -32,3 +32,16 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
 6. A11y(Web Accessibile):
     - All the blanks properly when uploading images
     - No plugins, all plugins must be tested first by the web dev team
+
+
+### Credits update
+#### Issue 1
+#### Issue 2
+#### Issue 3
+#### Issue 4
+#### Issue 5
+**Font face in Issue 5**   
+Suez one & 80KB, we have sole permission from the designer Michal Sahar to use it in Issue 5   
+
+**Web Editor Empower**   
+Added [ACF(advancedcustomfields)](https://www.advancedcustomfields.com/)

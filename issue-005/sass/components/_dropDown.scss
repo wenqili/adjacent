@@ -12,6 +12,12 @@
       visibility: visible;
     }
   }
+
+  &:focus & {
+    &__list {
+      visibility: visible;
+    }
+  }
 }
 
 .c-DropDown__list {
