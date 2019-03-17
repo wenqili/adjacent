@@ -12,16 +12,24 @@
       visibility: visible;
     }
   }
+}
 
-  &:focus & {
-    &__list {
-      visibility: visible;
-    }
-  }
+.c-DropDown__info {
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: $primary-color;
+  font-size: inherit;
 }
 
 .c-DropDown__list {
   visibility: hidden;
+}
+
+.c-DropDown.is-active {
+  .c-DropDown__list {
+    visibility: visible;
+  }
 }
 
 .c-DropDown__item {

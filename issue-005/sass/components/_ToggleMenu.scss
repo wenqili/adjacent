@@ -24,6 +24,9 @@
   overflow: auto;
   background-color: $white;
   transition: 0.2s ease;
+  &:focus-within {
+    top: 0;
+  }
 }
 
 .c-ToggleMenu__logoContainer {

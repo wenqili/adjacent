@@ -24,3 +24,18 @@ html {
 .screen-reader-text {
   display: none;
 }
+
+.skip {
+  position: absolute;
+  z-index: 12;
+  padding: 0.5rem;
+  font-size: 2em;
+  color: $white;
+  background-color: $primary-color;
+  top: -1000px;
+
+  &:focus {
+    top: 0;
+    left: 0;
+  }
+}
