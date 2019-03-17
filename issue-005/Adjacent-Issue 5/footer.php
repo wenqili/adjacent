@@ -23,11 +23,11 @@
 				<!-- <a class="site-name" href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name');?></a>, -->
 			<?php endif;?>
 			<?php if (function_exists('the_privacy_policy_link')) {
-    			the_privacy_policy_link('', '<span role="separator" aria-hidden="true"></span>');}?>
+    the_privacy_policy_link('', '<span role="separator" aria-hidden="true"></span>');}?>
 			<?php if (has_nav_menu('footer')): ?>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e('Footer Menu', 'twentynineteen');?>">
 					<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_class' => 'footer-menu',
-        'depth' => 1,));?>
+    'depth' => 1));?>
 				</nav><!-- .footer-navigation -->
 			<?php endif;?>
 		</div><!-- .site-info -->
@@ -63,6 +63,7 @@
 
 </div><!-- #page -->
 
+<script type="text/javascript" src="http://localhost:8888/wordpress/wp-content/themes/Adjacent-theme/js/keyboard.js"></script>
 <?php wp_footer();?>
 
 

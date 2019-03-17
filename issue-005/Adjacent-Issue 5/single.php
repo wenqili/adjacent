@@ -57,9 +57,8 @@ endwhile; // End of the loop.
 	</section><!-- #primary -->
 
 	<!-- catalog -->
-<div class="catalog catalog--reverse" tabindex="0">
-	<p class="catalog__info catalog__info--reverse">Table of Contents</p>
-
+<div class="catalog catalog--reverse">
+<div class="catalog__info catalog__info--reverse"  role="button" tabindex="0"><span>Table of Contents</span></div>
 	<div class="catalog__card">
 		<div class="catalog__logoContainer">
 		<img class="catalog__logo white" alt="Reality Logo" src="https://itp.nyu.edu/adjacent/issue-5/wp-content/uploads/sites/10/2019/03/reality.svg">
@@ -80,7 +79,11 @@ while ($wp_query->have_posts()): $wp_query->the_post();?>
 </div>
 
 			<?php endwhile;?>
-
+	<button class="catalog__closeButton">
+		<svg viewbox="0 0 40 40">
+    <path class="catalog__path catalog__path--reverse" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+  </svg>
+	</button>
 	</div>
 </div>
 <?php

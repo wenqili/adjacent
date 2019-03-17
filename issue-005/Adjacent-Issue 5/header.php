@@ -20,22 +20,18 @@
 </head>
 
 <body <?php body_class();?>>
+<a href="#content" class="skip">Skip Navigation</a>
 <div id="page" class="site">
-
-
-
-
-
 <header role="banner" class=
 <?php if (is_front_page()) {
-echo "'header-front-page header with-fixed-catalog'";
+    echo "'header-front-page header with-fixed-catalog'";
 } else {
-echo "'header-normal header with-fixed-catalog'";}?> >
+    echo "'header-normal header with-fixed-catalog'";}?> >
   <div class="c-NavBar">
     <div class="c-NavBar__brand">
       <div class="c-NavBar__logoContainer">
 
-		
+
 		<a href="<?php echo esc_url(home_url('/index.php')); ?>" title="<?php echo esc_html(get_bloginfo('name')); ?>" rel="home">
 
           <?php if (is_front_page()) {?>
@@ -61,7 +57,7 @@ echo "'header-normal header with-fixed-catalog'";}?> >
 		</div> <!--End of brand -->
 
 		<div class="c-NavBar__toggle">
-				<label class="c-ToggleMenu" for="c-ToggleMenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				<label class="c-ToggleMenu" for="c-ToggleMenu__toggle"  role="checkbox" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
 				</label>
 				<input type="checkbox" class="c-ToggleMenu__toggle" id="c-ToggleMenu__toggle" />
 
@@ -71,7 +67,7 @@ echo "'header-normal header with-fixed-catalog'";}?> >
 				</div>
 				<div class="c-ToggleMenu__dropDown">
 					<div class="c-DropDownToggle">
-						<label class="c-DropDownToggle__info"
+						<label tabindex="0" class="c-DropDownToggle__info"
 						for="previous-issue" role="button" aria-haspopup="true" aria-expanded="false">
 							previous issues
 						</label>
@@ -86,7 +82,7 @@ echo "'header-normal header with-fixed-catalog'";}?> >
 					</div>
 
 					<div class="c-DropDownToggle">
-						<label class="c-DropDownToggle__info"
+						<label tabindex="0" class="c-DropDownToggle__info"
 						for="menu" role="button" aria-haspopup="true" aria-expanded="false">
 							menu
 						</label>
@@ -116,11 +112,11 @@ $wp_query->query('posts_per_page=20' . '&paged=' . $paged);
 
 while ($wp_query->have_posts()): $wp_query->the_post();?>
 
-												<div class="catalog__item"><h3 class="catalog__title">
-													<a href="<?php the_permalink();?>" title="Read more"><?php the_title();?></a>
-															</h3><?php if (get_field('author')): ?>
-															<h4 class="c-ArticleCard__author">By <?php the_field('author');?></h4>
-															<?php endif;?>
+																												<div class="catalog__item"><h3 class="catalog__title">
+																													<a href="<?php the_permalink();?>" title="Read more"><?php the_title();?></a>
+																															</h3><?php if (get_field('author')): ?>
+																															<h4 class="c-ArticleCard__author">By <?php the_field('author');?></h4>
+																															<?php endif;?>
 </div>
 
 			<?php endwhile;?>
@@ -137,9 +133,9 @@ while ($wp_query->have_posts()): $wp_query->the_post();?>
 
 		<div class="c-NavBar__dropDown">
 			<div class="c-DropDown">
-					<a class="c-DropDown__info" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="previous-issues">
+					<button class="c-DropDown__info" role="button" aria-haspopup="true" aria-expanded="false" id="previous-issues">
 							previous issues
-					</a>
+					</button>
 
 					<div class="c-DropDown__list" aria-labelledby="previous-issues">
 							<a class="c-DropDown__item" href="https://itp.nyu.edu/adjacent/issue-1/">issue 1</a>
@@ -150,9 +146,9 @@ while ($wp_query->have_posts()): $wp_query->the_post();?>
 			</div>
 
 			<div class="c-DropDown">
-					<a class="c-DropDown__info" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="menu-dropdown">
+					<button class="c-DropDown__info" role="button" aria-haspopup="true" aria-expanded="false" id="menu-dropdown">
 							menu
-					</a>
+				</button>
 
 					<div class="c-DropDown__list" aria-labelledby="menu-dropdown">
 							<a class="c-DropDown__item" href="./submit/">submit</a>
@@ -165,4 +161,4 @@ while ($wp_query->have_posts()): $wp_query->the_post();?>
 
 
 
-	<div id="content" class="site-content">
+	<main id="content" class="site-content">
