@@ -31,7 +31,7 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
     ```
 6. iframe
    - We prefer to host interactive illustration by ourselves, please contact Wenqi to submit the interactive illustration.
-   - Embed code:
+   - In Gutenberg Editor, add a HTML block, and copy the following code snippet to the block and replace the url:
     ```HTML
     <div class="c-iframe__container">
         <iframe class="c-iframe__frame" src="url/to/interactive/illustration" frameborder="0" allowfullscreen><iframe>
