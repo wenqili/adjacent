@@ -5,6 +5,9 @@
   border-bottom: 1px solid $primary-color;
 }
 
+.c-DropDownToggle__arrow {
+}
+
 .c-DropDownToggle__list {
   display: none;
   transition: 0.2s ease;
@@ -27,9 +30,20 @@
   }
 }
 
-#menu {
+#about {
   display: none;
-  &:checked + #menu-list {
+  &:checked + #about-list {
+    display: block;
+  }
+}
+
+#about-list {
+  font-family: $secondary-font-family;
+}
+
+#table-of-contents {
+  display: none;
+  &:checked + #table-of-contents-list {
     display: block;
   }
 }

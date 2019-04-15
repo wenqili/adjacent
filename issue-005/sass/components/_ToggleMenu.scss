@@ -4,6 +4,38 @@
   background-color: transparent;
   color: $primary-color;
   border: none;
+
+  &--reverse {
+    color:$white;
+    background-color: $primary-color;
+  }
+}
+
+.c-ToggleMenu__info {
+  height: 50vh;
+  background-color: $primary-color;
+  padding: 1.2rem $menu-offset-x;
+  font-size: 26px;
+  color: $white;
+}
+.c-ToggleMenu__logoContainer {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  span {
+    flex-grow: 0.1;
+  }
+}
+
+.c-ToggleMenu__logo {
+  // width: 40%;
+}
+
+.c-ToggleMenu__description {
+  font-size: 12px;
+  color: $white;
 }
 
 .c-ToggleMenu__toggle {
@@ -27,14 +59,6 @@
   &:focus-within {
     top: 0;
   }
-}
-
-.c-ToggleMenu__logoContainer {
-  padding-top: 1.75rem;
-  padding-left: $menu-offset-x;
-  padding-bottom: 4.375rem;
-  padding-right: 60%;
-  border-bottom: 1px solid $primary-color;
 }
 
 .c-ToggleMenu__dropDown {

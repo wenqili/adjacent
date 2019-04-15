@@ -36,7 +36,12 @@
   }
 
   @include tablet() {
-    width: 80%;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+
+  @include widescreen() {
+    width: 33.33%;
     padding: 2rem 1rem;
   }
 }

@@ -4,7 +4,6 @@
 
 .c-NavBar__logoContainer {
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid $primary-color;
 }
 
 .c-NavBar__brand {
@@ -26,8 +25,9 @@
 }
 
 .c-NavBar__issueLogo {
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 0;
+  left: calc(#{$catalog-width} + 3rem);
   z-index: 10;
   width: $wrapper-width;
   pointer-events: none;
@@ -37,8 +37,9 @@
   }
 
   @include mobile() {
-    width: 90px;
-    top: 70px;
+    width: 100vw;
+    left: 0;
+    top: 30px;
   }
 }
 
@@ -70,12 +71,23 @@
 
 /// For On Load animation
 .loader {
-  animation: zoomIn 1s ease-out;
+  animation: disappear 1s ease-out;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 
   @include mobile() {
-    animation: zoomInMobile 1s ease-out;
+    animation: disappear 1s ease-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 
