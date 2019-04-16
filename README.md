@@ -40,6 +40,10 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
 7. A11y(Web Accessibile):
     - All the blanks properly when uploading images
     - No plugins, all plugins must be tested first by the web dev team
+    
+8. Additonal
+    - In Post/Setting/Document/Sharing, Uncheck "Show sharing buttons"
+    - In Post/Setting/Document/Discussion, Uncheck "Allow Comments"
 
 
 ### Credits update
