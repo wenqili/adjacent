@@ -9,6 +9,10 @@
   padding: $page-padding-y $page-padding-x;
   min-width: 1000px;
 
+  @include mobile() {
+    min-width: auto;
+  }
+
   @include fullhd() {
     margin: auto;
     max-width: 1440px;

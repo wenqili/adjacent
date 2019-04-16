@@ -1,0 +1,21 @@
+.navigation {
+  font-size: 18px;
+
+  div {
+    margin-bottom: 18px;
+  }
+
+  @include mobile() {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.Navigation__button {
+  border-radius: 0px;
+  border: 1px solid !important;
+  width: 100%;
+  font-size: 18px;
+  padding: 12px 24px;
+  text-align: center;
+}
