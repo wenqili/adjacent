@@ -6,6 +6,9 @@
 }
 
 .c-DropDownToggle__arrow {
+  margin-left: 13px;
+  display: inline-block;
+  transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .c-DropDownToggle__list {
@@ -17,33 +20,61 @@
   display: block;
   margin: 1rem 0.2rem;
   font-family: $secondary-font-family;
+  font-size: 16px;
+
   &:first-child {
     margin-top: 20px;
+  }
+
+  @include mobile() {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 #previous-issue {
   display: none;
 
-  &:checked + #previous-issue-list {
+  &:checked ~ #previous-issue-list {
     display: block;
+  }
+
+  &:checked + label {
+    span.c-DropDownToggle__arrow {
+      transform: rotate(-90deg);
+    }
   }
 }
 
 #about {
   display: none;
-  &:checked + #about-list {
+  &:checked ~ #about-list {
     display: block;
+  }
+
+  &:checked + label {
+    span.c-DropDownToggle__arrow {
+      transform: rotate(-90deg);
+    }
   }
 }
 
 #about-list {
   font-family: $secondary-font-family;
+  p {
+    font-size: 16px;
+  }
 }
 
 #table-of-contents {
   display: none;
-  &:checked + #table-of-contents-list {
+  &:checked ~ #table-of-contents-list {
     display: block;
+  }
+
+  &:checked + label {
+    span.c-DropDownToggle__arrow {
+      transform: rotate(-90deg);
+    }
   }
 }

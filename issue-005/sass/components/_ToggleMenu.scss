@@ -6,7 +6,7 @@
   border: none;
 
   &--reverse {
-    color:$white;
+    color: $white;
     background-color: $primary-color;
   }
 }
@@ -18,7 +18,10 @@
   font-size: 26px;
   color: $white;
 }
+
 .c-ToggleMenu__logoContainer {
+  margin-left: -30px;
+  margin-right: -30px;
   padding-top: 100px;
   padding-bottom: 20px;
   display: flex;

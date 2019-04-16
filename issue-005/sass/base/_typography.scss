@@ -10,6 +10,14 @@ $heading-5-size: $theme-heading-5-size !default;
 $heading-6-size: $theme-heading-6-size !default;
 $paragraph-size: $theme-paragraph-size !default;
 
+$heading-1-size-mobile: 10px;
+$heading-2-size-mobile: 10px;
+$heading-3-size-mobile: 10px;
+$heading-4-size-mobile: 10px;
+$heading-5-size-mobile: 10px;
+$heading-6-size-mobile: 10px;
+$paragraph-size-mobile: 10px;
+
 /// Reset body font from 16px to 10px
 body {
   font: normal 62.5% $secondary-font-family;
