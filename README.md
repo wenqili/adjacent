@@ -29,9 +29,21 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
     /// sharp edge outline button 
     .is-primary-button   
     ```
-6. A11y(Web Accessibile):
+6. iframe
+   - We prefer to host interactive illustration by ourselves, please contact Wenqi to submit the interactive illustration.
+   - In Gutenberg Editor, add a HTML block, and copy the following code snippet to the block and replace the url:
+    ```HTML
+    <div class="c-iframe__container">
+        <iframe class="c-iframe__frame" src="url/to/interactive/illustration" frameborder="0" allowfullscreen><iframe>
+    </div>
+    ```
+7. A11y(Web Accessibile):
     - All the blanks properly when uploading images
     - No plugins, all plugins must be tested first by the web dev team
+    
+8. Additional
+    - In Post/Setting/Document/Sharing, Uncheck "Show sharing buttons"
+    - In Post/Setting/Document/Discussion, Uncheck "Allow Comments"
 
 
 ### Credits update
