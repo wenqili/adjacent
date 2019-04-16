@@ -41,7 +41,7 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
     - All the blanks properly when uploading images
     - No plugins, all plugins must be tested first by the web dev team
     
-8. Additonal
+8. Additional
     - In Post/Setting/Document/Sharing, Uncheck "Show sharing buttons"
     - In Post/Setting/Document/Discussion, Uncheck "Allow Comments"
 
