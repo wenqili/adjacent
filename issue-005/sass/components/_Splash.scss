@@ -1,0 +1,81 @@
+.Splash {
+  position: fixed;
+  top: 0;
+  left: calc(4.25rem + 3rem);
+  z-index: 10;
+  width: calc(100% - 6rem - 4.25rem);
+  pointer-events: none;
+
+  &--post {
+    display: none;
+  }
+
+  @include mobile() {
+    top: 30%;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+/// For On Load animation
+.loader {
+  animation: disappear 3s ease-out;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+  @include mobile() {
+    animation: disappear 1.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+.loader-blur-to-clear {
+  animation: blur2clear 4s ease-out;
+
+  @include mobile() {
+    animation: blur2clear 1s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &--post {
+    animation: none;
+  }
+}
+
+@keyframes blur2clear {
+  0% {
+    filter: blur(50px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    width: $wrapper-width;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
+@keyframes zoomInMobile {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 90px;
+  }
+}
