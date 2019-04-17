@@ -82,12 +82,12 @@
 
 /// For On Load animation
 .loader {
-  animation: disappear 1s ease-out;
-  animation-delay: 1s;
+  animation: disappear 1.5s ease-out;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 
   @include mobile() {
-    animation: disappear 1s ease-out;
+    animation: disappear 1.5s ease-out;
     animation-fill-mode: forwards;
   }
 }

@@ -31,6 +31,10 @@
   text-transform: uppercase;
 }
 
+.primary-color {
+  color: $primary-color;
+}
+
 .is-primary-button {
   color: $primary-color;
   a {

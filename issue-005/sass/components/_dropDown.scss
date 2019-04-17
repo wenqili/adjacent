@@ -3,7 +3,7 @@
   padding-bottom: 0rem;
   padding-right: 0rem;
   padding-left: 2rem;
-
+  z-index: 1;
   font-family: $primary-font-family;
   font-size: 2em;
 
@@ -21,6 +21,7 @@
   color: $primary-color;
   font-size: inherit;
 }
+
 
 .c-DropDown__list {
   visibility: hidden;
