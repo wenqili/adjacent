@@ -1,7 +1,10 @@
 .c-DropDownToggle {
   font-family: $primary-font-family;
   font-size: 2em;
-  padding: 1.2rem $menu-offset-x;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: $menu-offset-x;
+  padding-right: $menu-offset-x;
   border-bottom: 1px solid $primary-color;
 }
 

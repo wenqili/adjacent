@@ -8,18 +8,15 @@
   background-color: $white;
   transition: width 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  // transition:  0.05s linear;
-  // &:hover {
-  //   width: 50vw;
+  &:hover {
+    transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: calc(#{$catalog-width} + 1rem);
 
-  //   #{ $self }__card {
-  //     display: block;
-  //   }
-
-  //   #{ $self }__info {
-  //     display: none;
-  //   }
-  // }
+    #{$self}__info {
+      transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      left: calc(#{$catalog-width} + 1rem - 4.25rem);
+    }
+  }
 
   &--reverse {
     background-color: $secondary-color;
@@ -86,16 +83,12 @@
     margin-bottom: 1.625rem;
     margin-left: $menu-offset-x;
   }
-
-  &:hover {
-    transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    left: 10px;
-  }
 }
 
 .catalogo__issueLogo {
   font-family: 'Brutal-Bold';
   color: $white;
+  pointer-events: none;
 }
 
 .catalog__logoContainer {
