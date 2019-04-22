@@ -17,11 +17,13 @@
   }
 
   &--focus {
-    filter: none;
-    width: 95% !important;
-    z-index: 10;
-    #{$self}__card {
-      opacity: 1;
+    @include mobile() {
+      filter: none;
+      width: 95% !important;
+      z-index: 10;
+      #{$self}__card {
+        opacity: 1;
+      }
     }
   }
 
