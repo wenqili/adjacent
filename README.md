@@ -6,7 +6,7 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
 
 ### Web Editor Style Guideline - Ver 0.1.0
 1. Use Gutenberg Editor to upload and style typography.
-2. Adjacent Field at the end of the Web Editor need to be filled. 
+2. Adjacent Field at the end of the Web Editor need to be filled.
 3. Choose Catagory: Articles
 4. Semantic HTML:
     - H1 for Article Title
@@ -16,18 +16,20 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
     - H5, H6 are currently reserved, please try to avoid using them
     - "Citation block" is reserved. Use "Pull quote" block instead.
     - Bold type, Italic type and in-line link are only allowed in paragraphs.
+5. Hero Banner:
+    - Choose Cover Block and set overlay opacity to 0;
 5. Custom style in Gutenbuerg:
     - Open settings(the small gear icon on top right corner), Block / Advanced / Addtional CSS class, add the helper classes
-    - Helper classes:   
+    - Helper classes:
     ```scss
-    /// the same font with headings   
+    /// the same font with headings
     .primary-font
-    
-    /// force to be uppercase 
-    .uppercase  
-    
-    /// sharp edge outline button 
-    .is-primary-button   
+
+    /// force to be uppercase
+    .uppercase
+
+    /// sharp edge outline button
+    .is-primary-button
     ```
 6. iframe
    - We prefer to host interactive illustration by ourselves, please contact Wenqi to submit the interactive illustration.
@@ -40,7 +42,7 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
 7. A11y(Web Accessibile):
     - All the blanks properly when uploading images
     - No plugins, all plugins must be tested first by the web dev team
-    
+
 8. Additional
     - In Post/Setting/Document/Sharing, Uncheck "Show sharing buttons"
     - In Post/Setting/Document/Discussion, Uncheck "Allow Comments"
@@ -52,8 +54,8 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
 #### Issue 3
 #### Issue 4
 #### Issue 5
-**Font face in Issue 5**   
-Suez one & 80KB, we have sole permission from the designer Michal Sahar to use it in Issue 5   
+**Font face in Issue 5**
+Suez one & 80KB, we have sole permission from the designer Michal Sahar to use it in Issue 5
 
-**Web Editor Empower**   
+**Web Editor Empower**
 Added [ACF(advancedcustomfields)](https://www.advancedcustomfields.com/)

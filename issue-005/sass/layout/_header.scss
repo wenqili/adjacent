@@ -1,4 +1,7 @@
 .header {
-  padding: $container-padding-y $container-padding-x;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+  padding-top: 2.5rem;
+  padding-bottom: $container-padding-y;
   max-width: none;
 }

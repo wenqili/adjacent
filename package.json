@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel issue-005/front_page_template.html --open",
-    "dev": "node-sass --watch issue-005/sass/. -o /Users/ericli/Documents/wordpress/wordpress/wp-content/themes/adjacent-theme"
+    "start": "parcel issue-005/index.html --open",
+    "dev": "node-sass --watch issue-005/sass/. -o /Users/wenqili/Dev/MAMP/wordpress/wp-content/themes/Adjacent-theme/"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",

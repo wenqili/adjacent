@@ -40,11 +40,13 @@ h6 {
 
 h1 {
   font-size: $heading-1-size;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: $heading-2-size;
   font-family: $secondary-font-family;
+  margin:0;
 }
 
 h3 {
@@ -93,7 +95,6 @@ blockquote {
 }
 
 .wp-block-image {
-  height: 45vh;
   img {
     max-width: 100%;
     width: 100%;
