@@ -40,13 +40,14 @@ h6 {
 
 h1 {
   font-size: $heading-1-size;
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: $heading-2-size;
   font-family: $secondary-font-family;
   margin:0;
+  margin-bottom: 0.2em;
 }
 
 h3 {
@@ -72,7 +73,7 @@ h6 {
 p {
   font-size: $paragraph-size;
   line-height: 1.5em;
-  color: $secondary-color;
+  color: #333333;
 }
 
 hr {
@@ -111,6 +112,20 @@ blockquote {
 
 .wp-block-column {
   flex-grow: 1;
+  max-width: 600px;
+
+  &:not(:first-child){
+    margin: auto;
+    margin-right:0;
+
+    @include tablet(){
+      margin-right:auto;
+    }
+
+    @include mobile(){
+      margin-right:auto;
+    }
+  }
   &:first-child {
     max-width: 375px;
   }
