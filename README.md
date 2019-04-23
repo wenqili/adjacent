@@ -14,10 +14,11 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
     - H3, subject
     - H4, subcategory of subject
     - H5, H6 are currently reserved, please try to avoid using them
-    - "Citation block" is reserved. Use "Pull quote" block instead.
+    - **Citation** block and **Pull quote** block are two different kind of quote blocks with diffrent styling.
     - Bold type, Italic type and in-line link are only allowed in paragraphs.
-5. Hero Banner:
-    - Choose Cover Block and set overlay opacity to 0;
+5. Image embed:
+    - Hero banner: choose **Cover** and set overlay opacity to 0;
+    - Other images inside articles: choose **image** block and adjust the layout as you wish;
 5. Custom style in Gutenbuerg:
     - Open settings(the small gear icon on top right corner), Block / Advanced / Addtional CSS class, add the helper classes
     - Helper classes:
@@ -30,15 +31,31 @@ This repo is for the Web Dev Team and illustration authurs to collaborate togeth
 
     /// sharp edge outline button
     .is-primary-button
+
+    /// no margin
+    .no-margin
+
+    /// no padding
+    .no-padding
+
+    /// illustration author
+    .is-illustration-author
+
+    /// blurb
+    .blurb
     ```
+
 6. iframe
    - We prefer to host interactive illustration by ourselves, please contact Wenqi to submit the interactive illustration.
    - In Gutenberg Editor, add a HTML block, and copy the following code snippet to the block and replace the url:
     ```HTML
     <div class="c-iframe__container">
-        <iframe class="c-iframe__frame" src="url/to/interactive/illustration" frameborder="0" allowfullscreen><iframe>
+        <figure>
+            <iframe class="c-iframe__frame" src="url/to/interactive/illustration" frameborder="0" allowfullscreen><iframe>
+        </figure>
     </div>
     ```
+
 7. A11y(Web Accessibile):
     - All the blanks properly when uploading images
     - No plugins, all plugins must be tested first by the web dev team
