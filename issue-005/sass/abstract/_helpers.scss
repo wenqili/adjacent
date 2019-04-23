@@ -72,4 +72,10 @@
 }
 
 
-/// inside articles
+/// Jetpack plugin
+.sd-content{
+  @include mobile(){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

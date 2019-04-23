@@ -163,6 +163,10 @@
   @include mobile() {
     font-size: 16px;
   }
+
+  &:hover{
+    text-decoration:underline;
+  }
 }
 
 .catalog__author {
@@ -177,8 +181,9 @@
 }
 
 .catalog__closeButton {
+  position: absolute;
   width: $catalog-width;
-  height: $catalog-width;
+  height: 100%;
   background: transparent;
   border: 0;
   cursor: pointer;
