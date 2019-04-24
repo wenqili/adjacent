@@ -110,10 +110,12 @@
   display: none;
   position: absolute;
   height: 100%;
-  width: 70%;
-  // padding: 6.75rem $catalog-width 16.3rem 6.25rem;
-  margin-left: 15%;
-  margin-right: $catalog-width;
+  // width: 70%;
+  // margin-left: 15%;
+  // margin-right: $catalog-width;
+  // padding-right: 15%;
+  width: calc(100% - #{$catalog-width});
+  padding-left: 15%;
   padding-right: 15%;
 
   overflow-y: auto;
