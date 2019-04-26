@@ -54,6 +54,7 @@ h3 {
   font-size: $heading-3-size;
   line-height: 1.4em;
   text-transform: uppercase;
+  margin-top: 2em;
 }
 
 h4 {
@@ -110,13 +111,24 @@ blockquote {
   border-bottom: 1px solid $primary-color;
 }
 
+.wp-block-quote {
+  border-left: 2px solid $primary-color !important;
+  padding-left: 3em !important;
+  margin:3em 0 3em 0 !important;
+  max-width: 80%;
+
+  @include mobile(){
+    max-width: 100%;
+  }
+}
+
 .wp-block-column {
   flex-grow: 1;
   max-width: 600px;
 
   &:not(:first-child){
     margin: auto;
-    margin-right:0;
+    margin-right:30px;
 
     @include tablet(){
       margin-right:auto;
@@ -129,4 +141,8 @@ blockquote {
   &:first-child {
     max-width: 375px;
   }
+}
+
+.wp-block-image{
+  margin: 2em 0 3em 0;
 }
