@@ -1,20 +1,27 @@
 # Adjacent
-### Brief
+## Brief
 [ADJACENT](https://itp.nyu.edu/adjacent/) is an online journal of emerging media published by the Interactive Telecommunications Program, or ITP.
 
 This repo is for the Web Dev Team, Editors,and authors to collaborate together on site and visuals development.
 
-### Table of Content
+## Table of Content
 [Web Editor Style Guideline v1.0.0](#Web-Editor-Style-Guideline-v1.0.0)
-[Interactive Illustration Guideline v0.1.0](#Interactive-Illustration-Guideline)
-[Launch Checklist v0.1.0](#Launch-Checklist)
 
-### Web Editor Style Guideline v1.0.0
+[Interactive Illustration Guideline v0.1.0](#Interactive-Illustration-Guideline-v0.1.0)
+
+[Web Accessibility Checklist v0.1.0](#Web-Accessibility-Checklist-v0.1.0)
+
+[Credits](#Credits)
+
+## Web Editor Style Guideline v1.0.0
 1. Use Wordpress Gutenberg Editor to upload articles and style typography.
+
 2. Adjacent Field at the end of Gutenberg Editor need to be filled.
-3. Category
+
+3. Category:
     - Articles: posts in this category will be shown in both **Table of content** and **Home page**.
     - Hidden: posts in this category will hide from both **Table of content** and **Home page**, and can only access through URL and search.
+
 4. Semantic Blocks (HTML):
     - **Article Title**: Heading block(H1)
     - **Authors**: Heading block(H2)
@@ -54,29 +61,40 @@ Open settings(the small gear icon on top right corner), Block -> Advanced -> Add
 
 7. A11y(Web Accessibility):
     - When uploading images, please fill all the fields properly, including title, alt-text and descriptions.
-    -
-
-    No plugins, all plugins must be tested first by the web dev team
+    - No empty links.
+    - No plugins, all plugins must be tested first by the web dev team
 
 8. Additional
-    - In Post/Setting/Document/Sharing, Uncheck "Show sharing buttons"
-    - In Post/Setting/Document/Discussion, Uncheck "Allow Comments"
+    - In Post -> Setting -> Document -> Discussion, Un-check "Allow Comments"
 
+## Interactive Illustration Guideline v0.1.0
+1. All the interactive illustrations will embed as iframe.
+2. CSS Style: works on full screen with no margin and padding.
+3. Mobile First: works on mobile, and could detect touch events.
+4. Authors will be credited in article author section, and figure descriptions. Please avoid adding credits in sketch.
 
+### Submit
+All the interactive illustrations will be hosted by Adjacent for maintaining reason. To submit:
 
+**Option 1**: fork this repo -> put code inside **docs/** folder -> pull request
 
-### Interactive Illustration Guideline
+**Option 2**: Email a Github repo link to wl1502@nyu.edu
 
-### Credits update
+Please Include a **README file(.txt or .md)** with following information:
+- Credits
+- Instructions for interactions
+- Browser Access: webcam, microphone, keyboard events, etc.
+
+## Web-Accessibility-Checklist-v0.1.0
+In progress..
+
+## Credits
 #### Issue 1
 #### Issue 2
 #### Issue 3
 #### Issue 4
-#### Issue 5
-**Font face in Issue 5**
-Suez one & 80KB, we have sole permission from the designer Michal Sahar to use it in Issue 5
+#### Issue 5:
+Adjacent has sole permission from the designer Michal Sahar to use font *Suez one* & *80KB* in Issue 5.
 
 **Web Editor Empower**
 Added [ACF(advancedcustomfields)](https://www.advancedcustomfields.com/)
-
-
