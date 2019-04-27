@@ -75,6 +75,10 @@ p {
   font-size: $paragraph-size;
   line-height: 1.5em;
   color: #333333;
+
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 hr {
@@ -84,6 +88,9 @@ hr {
 
 figcaption {
   text-align: left !important;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
   @include mobile() {
     padding: 0 30px;
   }
